@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <style>
+    body{
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-title{
+      text-align:center;
+    }
+
+    .contact-title h1{
+      margin-bottom:0;
+    }
+
+    #nav {
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+      background-color: #1c0d31;
+      text-align: center;
+    }
+
+    #nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    #nav li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    .contact-form{
+      margin-left: 300px;
+      float: left;
+      background-color: #8b8a8c;
+      width:30%;
+      height: auto;
+    }
+    #form input{
+      margin-top: 5px;
+      margin-bottom:5px;
+      width: 34%
+    }
+    #form {
+      
+      text-align: center;
+
+    }
+    label{
+      
+      display: block;
+    
+    }
+
+    #form input textarea{
+      width: 100%;
+      padding:8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    #submit-button{
+      width:100%;
+      height:40px;
+      font-size: 18px;
+      background: rgb(80, 80, 213);
+      border: 8px;
+     
+
+    }
+    #submit-button:hover{
+      background-color: #6b498c;
+      cursor: pointer;
+    }
+
+    #form-hr{
+      max-width: 40%;
+    }
+    .form-text{
+      text-align: center;
+    }
+    #contact-ul{
+      list-style-type: none;
+
+    }
+    #contact-ul li{
+      margin: 5px;
+    }
+    #contact-ul li a{
+      background-color: rgb(80, 80, 213);
+      color: black;
+      text-decoration: none;
+      padding: 4px 10px;
+    }
+
+    #contact-ul li a:hover{
+      width:50%;
+      background-color: #6b498c;
+      color: #1c0d31;
+      
+    }
+
+    .additional-info{
+      margin-right: 50px;
+      width:50%;
+      float:right;
+      
+
+    }
+
+    .additional-info p{
+      margin-top:0;
+      font-size: 20px;
+      margin-right: 700px;
+      text-align:center;
+
+    }
+    .additional-info #reasons #list-reason{
+   
+      margin: 10px;
+
+    }
+
+
+    #list-hr{
+      float: left;
+      width:70%;
+
+    }
+
+    #sublist li{ 
+      list-style-type: none;
+    }
+   #sublist li::before{
+    content: "\00BB"; 
+   }
+    #list-reason{
+      padding:8px;
+      list-style-type: none;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+  <div class="content">
+    <div class="contact-title">
+      <h1>Contact</h1>
+      <hr>
+    </div>
+  <div class="navbar">
+    <ul id="nav">
+      <li><a href="./index.html">Resume</a></li>
+      <li><a href="./hobbies.html">Hobbies</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="contact-form">
+    <form id = "form">
+      <label for="name">Name:</label>
+      <input type="text" placeholder="John Doe">
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" placeholder="jdoe1@gmail.com">
+      <br>
+      <label for="message">Message:</label>
+      
+      <textarea name="message" id="form-message" cols="25" rows="3" placeholder="Enter your message"></textarea>
+      <br>
+      <label for="additional-details">Additional Details:</label>
+      <textarea name="message" id="form-message" cols="25" rows="3" placeholder="Details"></textarea>
+      <br>
+      <input type="submit" value = "Send Message" id ="submit-button">
+
+    </form>  
+    <hr id = form-hr>
+    <div class="form-text">
+      <p>Contact information</p>
+
+      <ul id = "contact-ul">
+        <li>Mobile: 240-672-1385</li>
+        <li>Email: bbuttreyworks@gmail.com</li>
+        <li>linkedIn: <a href="https://www.linkedin.com/in/brady-buttrey-2b873a140/"><i>Brady Buttrey</i></a></li>
+      </ul>
+    </div>
+    
+  </div>
+    <div class="additional-info">
+      <p>Why to contact me?</p >
+        <ul id = "reasons">
+          <li id ="list-reason">Get in contact to collaborate on a project!</li>
+            <ul id = "sublist"><li>Lets work on something new or discuss a new project!</li></ul>
+            <hr id = "list-hr">
+          <li id ="list-reason">Get in contact to discuss an job opportunity!</li>
+            <ul id = "sublist"><li>Have a job opportunity or opening you think I would git for? Contact me!</li></ul>
+            <hr id = "list-hr">
+          <li id ="list-reason">Get in Contact to discuss any website issues!</li>
+            <ul id = "sublist"><li>Have issues with the site? Let me know by sending a message!</li></ul>
+            <hr id = "list-hr">
+          <li id ="list-reason">Anything! I open for communication and would love to discuss with you!</li>
+        </ul>
+
+    </div>
+
+  </div>
+</body>
+</html>
